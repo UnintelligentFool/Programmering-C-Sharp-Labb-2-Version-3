@@ -55,9 +55,11 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static List<string[]> NewCart1 { get => newCart; set => newCart = value; }
 
+        protected List<string[]> anotherCart = new List<string[]>() {  };
+
         public User(string username/*, string password*/) {
 
-            CheckCart();
+            //CheckCart();
 
         }
 
@@ -136,7 +138,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
             string[] itemValues = new string[4] { newBook.Title, newBook.Author, newBook.ItemNumber, newBook.Price };
             
-            NewCart.Add(itemValues);//ArrayOfItems
+            anotherCart.Add(itemValues);//ArrayOfItems
             Console.WriteLine("Items being sent received by User class!");
             //Console.WriteLine("User is getting a: " + NewCart[(NewCart.Count - 1)]);
 
@@ -146,15 +148,21 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             //List<string[]> listOfBooks = new List<string[]>() { Book1, Book2, Book3 };
         }
 
-        public static void CheckCart() {
+        //public static void LetUsCheckTheCart() {
 
-            for (int i = 0; i < User.NewCart1.Count; i++) {
+        //    CheckCart(anotherCart);
 
-                Console.WriteLine(User.NewCart1[i][0]);
+        //}
 
-            }
+        //public void CheckCart(anotherCart) {
 
-        }
+        //    for (int i = 0; i < anotherCart.Count; i++) {
+
+        //        Console.WriteLine(anotherCart[i][0]);
+
+        //    }
+
+        //}
     }
 }
 

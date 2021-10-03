@@ -65,14 +65,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             Program.IsSomeoneOnline = false;
             Program.UserOnline = "";
 
-            for (int i = 0; i < Program.shoppingCartList.Count;) {
-
-                Program.shoppingCartList.RemoveAt(0);
-
-            }
-
-            Program.shoppingCartList.Clear();
-
             TimeToLogIn(theListOfUsers, isSomeoneLoggedIn, userLoggedIn);
 
         }

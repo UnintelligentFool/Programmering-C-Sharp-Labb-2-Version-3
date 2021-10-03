@@ -93,8 +93,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static List<string[]> listOfUsers = new List<string[]>() { knatte, fnatte, tjatte };
 
-        public static List<string[]> shoppingCartList = new List<string[]>();
-
         private static bool isSomeoneOnline = false;
         public static bool IsSomeoneOnline {
             get { return isSomeoneOnline; }
@@ -200,7 +198,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
             Menu mainMenu = new Menu(false);
 
-            User.CheckCart();
+            //User.CheckCart();
             
             Keystrokes(false, listOfUsers);
 
@@ -374,7 +372,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
                         if (int.Parse(usersInput) == int.Parse(Games_Page.listOfGames[i][3])) {
 
-                            shoppingCartList.Add(Games_Page.listOfGames[i]);
+                            //shoppingCartList.Add(Games_Page.listOfGames[i]);
 
                         } else {
 
@@ -390,7 +388,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
                         if (int.Parse(usersInput) == int.Parse(Movies_Page.listOfMovies[i][3])) {
 
-                            shoppingCartList.Add(Movies_Page.listOfMovies[i]);
+                            //shoppingCartList.Add(Movies_Page.listOfMovies[i]);
 
                         } else {
 

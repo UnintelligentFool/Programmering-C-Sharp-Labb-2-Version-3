@@ -120,7 +120,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
             Itemnumber = 0;
 
-            //Console.Clear();
+            Console.Clear();
 
             User addToNewCart = new User(BookValuesArray);
 
