@@ -200,7 +200,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         }
 
-        public static void AddToCart(string[] itemArray) {
+        public static string[] AddToCart(string[] itemArray) {
 
             string[] itemValuesArray = itemArray;
 
@@ -224,7 +224,18 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
             string[] itemValues = new string[4] { myNewItem.Title, myNewItem.Author, myNewItem.ItemNumber, myNewItem.Price };
 
-            User.NewCart1.Add(itemValuesArray);
+            //foreach (string user in UserOnline) {
+
+            //    if() { 
+
+            //        User.NewCart1.Add(itemArray);
+
+            //    }
+            //}
+
+            User.NewCart1.Add(itemArray);
+
+            return (itemArray);
             //Console.WriteLine("Items being sent received by User class!");
             //Console.WriteLine("User is getting a: " + anotherCart[(anotherCart.Count - 1)][0].ToString());
 

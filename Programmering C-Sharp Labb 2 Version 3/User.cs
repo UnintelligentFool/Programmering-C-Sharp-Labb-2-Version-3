@@ -109,38 +109,13 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
 //        public User(string[] itemArray) {
         
-        public static void putInCart(string[] itemArray) { 
-
-            NewItem newBook = new NewItem();
-            newBook.Title = itemArray[0];
-            newBook.Author = itemArray[1];
-            newBook.ItemNumber = itemArray[2];
-            newBook.Price = itemArray[3];
-
-            Console.WriteLine("Work! Work! Work!");
-
-            Console.WriteLine("Title: " + newBook.Title);
-            Console.WriteLine("Author: " + newBook.Author);
-            Console.WriteLine("ItemNumber: " + newBook.ItemNumber);
-            Console.WriteLine("Price: " + newBook.Price);
-
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.Write("Tillagd i kundvagnen: ");
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine(newBook.Title.ToString() + "\n");
-            Console.ResetColor();
-
-            string[] itemValues = new string[4] { newBook.Title, newBook.Author, newBook.ItemNumber, newBook.Price };
-            
-            anotherCart.Add(itemValues);//ArrayOfItems
-            //Console.WriteLine("Items being sent received by User class!");
-            //Console.WriteLine("User is getting a: " + anotherCart[(anotherCart.Count - 1)][0].ToString());
+        public static void ShowCart(string[] itemArray) { 
 
             Console.WriteLine("Noooooo!");
 
-            for (int i = 0; i < anotherCart.Count; i++) {
+            for (int i = 0; i < NewCart1.Count; i++) {
 
-                Console.WriteLine("Cart contains: " + anotherCart[i][0].ToString());
+                Console.WriteLine("Cart contains: " + NewCart1[i][0].ToString());
 
             }
 
