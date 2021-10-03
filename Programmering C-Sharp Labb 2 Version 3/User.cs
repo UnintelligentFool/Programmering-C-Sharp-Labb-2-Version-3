@@ -49,9 +49,11 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
         private static List<string[]> newCart;
 
         public List<string[]> NewCart {
-            get { return newCart; }
-            set { newCart = value; }
+            get { return NewCart1; }
+            set { NewCart1 = value; }
         }
+
+        public static List<string[]> NewCart1 { get => newCart; set => newCart = value; }
 
         public User(string username/*, string password*/) {
 
@@ -105,6 +107,8 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public User(string[] itemArray) {
 
+
+
             NewItem newBook = new NewItem();
             newBook.Title = itemArray[0];
             newBook.Author = itemArray[1];
@@ -130,21 +134,23 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             Console.WriteLine(newBook.Title.ToString() + "\n");
             Console.ResetColor();
 
-            string[] itemValues = new string[] { newBook.Title, newBook.Author, newBook.ItemNumber, newBook.Price };
+            string[] itemValues = new string[4] { newBook.Title, newBook.Author, newBook.ItemNumber, newBook.Price };
             
-            NewCart.AddRange(itemValues);//ArrayOfItems
+            NewCart.Add(itemValues);//ArrayOfItems
             Console.WriteLine("Items being sent received by User class!");
-            Console.WriteLine("User is getting a: " + NewCart[(NewCart.Count - 1)]);
+            //Console.WriteLine("User is getting a: " + NewCart[(NewCart.Count - 1)]);
 
             Console.WriteLine("Noooooo!");
 
+            //shoppingCartList.Add(Books_Page.listOfBooks[i]);
+            //List<string[]> listOfBooks = new List<string[]>() { Book1, Book2, Book3 };
         }
 
         public static void CheckCart() {
 
-            for (int i = 0; i < User.newCart.Count; i++) {
+            for (int i = 0; i < User.NewCart1.Count; i++) {
 
-                Console.WriteLine(User.newCart[i][0]);
+                Console.WriteLine(User.NewCart1[i][0]);
 
             }
 
