@@ -109,7 +109,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
 //        public User(string[] itemArray) {
         
-        public putInCart(string[] itemArray) { 
+        public static void putInCart(string[] itemArray) { 
 
             NewItem newBook = new NewItem();
             newBook.Title = itemArray[0];

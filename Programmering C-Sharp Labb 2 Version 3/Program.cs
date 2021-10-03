@@ -105,14 +105,14 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             set { userOnline = value; }
         }
 
-        private string[] productInHand;
-
-        public string[] ProductInHand {
-            get { return productInHand; }
-            set { productInHand = value; }
-        }
-
-
+        //private string[] productInHand;
+        //
+        //public string[] ProductInHand {
+        //    get { return ProductInHand1; }
+        //    set { ProductInHand1 = value; }
+        //}
+        //
+        //public string[] ProductInHand1 { get => productInHand; set => productInHand = value; }
 
         static void Main(string[] args) {
 
@@ -200,11 +200,37 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         }
 
-        public static void AddToCart() {
+        public static void AddToCart(string[] itemArray) {
+
+            string[] itemValuesArray = itemArray;
+
+
+            NewItem myNewItem = new NewItem();
+            myNewItem.Title = itemArray[0];
+            myNewItem.Author = itemArray[1];
+            myNewItem.ItemNumber = itemArray[2];
+            myNewItem.Price = itemArray[3];
+
+            Console.WriteLine("Title: " + myNewItem.Title);
+            Console.WriteLine("Author: " + myNewItem.Author);
+            Console.WriteLine("ItemNumber: " + myNewItem.ItemNumber);
+            Console.WriteLine("Price: " + myNewItem.Price);
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.Write("Tillagd i kundvagnen: ");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine(myNewItem.Title.ToString() + "\n");
+            Console.ResetColor();
+
+            string[] itemValues = new string[4] { myNewItem.Title, myNewItem.Author, myNewItem.ItemNumber, myNewItem.Price };
+
+            User.NewCart1.Add(itemValuesArray);
+            //Console.WriteLine("Items being sent received by User class!");
+            //Console.WriteLine("User is getting a: " + anotherCart[(anotherCart.Count - 1)][0].ToString());
 
 
 
-            User.NewCart1.Add();
+            //User.NewCart1.Add(itemValuesArray);
 
             //string[] hello = new string[] { "Good day", "Hey", "Hi", "Hello" };
 

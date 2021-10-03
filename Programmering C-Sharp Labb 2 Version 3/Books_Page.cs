@@ -122,18 +122,18 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
             Console.Clear();
             
-            Program.ProductInHand(BookValuesArray);
+            //Program.ProductInHand(BookValuesArray);
 
             //User addToNewCart = new User(BookValuesArray);
 
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.Write("Tillagd i kundvagnen: ");
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine(newBook.Title.ToString() + "\n");
-            Console.ResetColor();
+            //Console.ForegroundColor = ConsoleColor.DarkBlue;
+            //Console.Write("Tillagd i kundvagnen: ");
+            //Console.ForegroundColor = ConsoleColor.DarkGreen;
+            //Console.WriteLine(newBook.Title.ToString() + "\n");
+            //Console.ResetColor();
             
 
-            Program.Books();
+            Program.AddToCart(BookValuesArray);
 
         }
 
