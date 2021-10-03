@@ -149,28 +149,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         }
 
-        public static void ViewShoppingCart() {
-
-            ShowOnlineCustomer showOnlineCustomer = new ShowOnlineCustomer(IsSomeoneOnline, UserOnline);
-
-            Menu mainMenu = new Menu(false);
-            
-            Keystrokes(false, listOfUsers);
-
-        }
-
-        public static void CheckOut() {
-
-            ShowOnlineCustomer showOnlineCustomer = new ShowOnlineCustomer(IsSomeoneOnline, UserOnline);
-
-            Menu mainMenu = new Menu(false);
-
-            Check_Out check_Out = new Check_Out();
-
-            Keystrokes(false, listOfUsers);
-
-        }
-
         public static void Keystrokes(bool firstmenu, List<string[]> listOfUsers) {
 
             string usersInput = Console.ReadLine().ToUpper();
@@ -241,7 +219,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
                     Console.Clear();
 
-                    ViewShoppingCart();
+                    Keystrokes(firstMenu, listOfUsers);
 
                 } else if (usersInput == "B" && firstMenu == true) {
 
@@ -251,7 +229,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
                     Console.Clear();
 
-                    CheckOut();
+                    Keystrokes(firstMenu, listOfUsers);
 
                 } else if (usersInput == "L" && firstMenu == true) {
 
@@ -295,59 +273,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
             } else {
 
-                for (int i = 0; i < Books_Page.listOfBooks.Count; i++) {
-
-                    if (int.TryParse(usersInput, out _)) {
-
-                        if (int.Parse(usersInput) == int.Parse(Books_Page.listOfBooks[i][3])) {
-
-                            if (isSomeoneOnline == false) {
-
-                            } else {
-
-                            }
-
-                            if (isSomeoneOnline == true) {
-
-                            } else {
-
-                            }
-
-                        } else {
-
-                        }
-
-                    }
-
-                }
-
-                for (int i = 0; i < Games_Page.listOfGames.Count; i++) {
-
-                    if (int.TryParse(usersInput, out _)) {
-
-                        if (int.Parse(usersInput) == int.Parse(Games_Page.listOfGames[i][3])) {
-
-                        } else {
-
-                        }
-
-                    }
-
-                }
-
-                for (int i = 0; i < Movies_Page.listOfMovies.Count; i++) {
-
-                    if (int.TryParse(usersInput, out _)) {
-
-                        if (int.Parse(usersInput) == int.Parse(Movies_Page.listOfMovies[i][3])) {
-
-                        } else {
-
-                        }
-
-                    }
-
-                }
 
                 Keystrokes(firstMenu, listOfUsers);
 

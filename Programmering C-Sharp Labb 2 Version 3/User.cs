@@ -55,8 +55,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static List<string[]> NewCart1 { get => newCart; set => newCart = value; }
 
-        protected List<string[]> anotherCart = new List<string[]>() {  };
-
         public User(string username) {
 
         }
@@ -75,8 +73,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
         }
         
         public static void ShowCart(string[] itemArray) { 
-
-            Console.WriteLine("Noooooo!");
 
             for (int i = 0; i < NewCart1.Count; i++) {
 
