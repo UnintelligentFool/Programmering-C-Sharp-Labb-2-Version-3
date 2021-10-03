@@ -107,9 +107,9 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
         }
 
 
-        public User(string[] itemArray) {
-
-
+//        public User(string[] itemArray) {
+        
+        public putInCart(string[] itemArray) { 
 
             NewItem newBook = new NewItem();
             newBook.Title = itemArray[0];
@@ -118,12 +118,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             newBook.Price = itemArray[3];
 
             Console.WriteLine("Work! Work! Work!");
-
-            /*NewItem itemma = new NewItem();
-            Console.WriteLine("Title: " + itemma.Title);
-            Console.WriteLine("Author: " + itemma.Author);
-            Console.WriteLine("ItemNumber: " + itemma.ItemNumber);
-            Console.WriteLine("Price: " + itemma.Price);*/
 
             Console.WriteLine("Title: " + newBook.Title);
             Console.WriteLine("Author: " + newBook.Author);
@@ -139,13 +133,17 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             string[] itemValues = new string[4] { newBook.Title, newBook.Author, newBook.ItemNumber, newBook.Price };
             
             anotherCart.Add(itemValues);//ArrayOfItems
-            Console.WriteLine("Items being sent received by User class!");
-            //Console.WriteLine("User is getting a: " + NewCart[(NewCart.Count - 1)]);
+            //Console.WriteLine("Items being sent received by User class!");
+            //Console.WriteLine("User is getting a: " + anotherCart[(anotherCart.Count - 1)][0].ToString());
 
             Console.WriteLine("Noooooo!");
 
-            //shoppingCartList.Add(Books_Page.listOfBooks[i]);
-            //List<string[]> listOfBooks = new List<string[]>() { Book1, Book2, Book3 };
+            for (int i = 0; i < anotherCart.Count; i++) {
+
+                Console.WriteLine("Cart contains: " + anotherCart[i][0].ToString());
+
+            }
+
         }
 
         //public static void LetUsCheckTheCart() {

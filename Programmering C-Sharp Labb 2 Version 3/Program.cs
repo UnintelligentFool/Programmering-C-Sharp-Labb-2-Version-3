@@ -105,6 +105,14 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             set { userOnline = value; }
         }
 
+        private string[] productInHand;
+
+        public string[] ProductInHand {
+            get { return productInHand; }
+            set { productInHand = value; }
+        }
+
+
 
         static void Main(string[] args) {
 
@@ -189,6 +197,18 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             Movies_Page movies_Page = new Movies_Page();
 
             Keystrokes(false, listOfUsers);
+
+        }
+
+        public static void AddToCart() {
+
+
+
+            User.NewCart1.Add();
+
+            //string[] hello = new string[] { "Good day", "Hey", "Hi", "Hello" };
+
+            //User.NewCart1.Add(hello);
 
         }
 

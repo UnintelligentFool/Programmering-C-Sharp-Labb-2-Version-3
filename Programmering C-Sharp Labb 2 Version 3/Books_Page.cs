@@ -110,27 +110,28 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             }
             */
 
-            /*
-            NewItem newBook = new NewItem();
+            
+            /*NewItem newBook = new NewItem();
             newBook.Title = BookValuesArray[0];
             newBook.Author = BookValuesArray[1];
             newBook.ItemNumber = BookValuesArray[2];
-            newBook.Price = BookValuesArray[3];
-            */
+            newBook.Price = BookValuesArray[3];*/
+            
 
             Itemnumber = 0;
 
             Console.Clear();
+            
+            Program.ProductInHand(BookValuesArray);
 
-            User addToNewCart = new User(BookValuesArray);
+            //User addToNewCart = new User(BookValuesArray);
 
-            /*
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.Write("Tillagd i kundvagnen: ");
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine(newBook.Title.ToString() + "\n");
             Console.ResetColor();
-            */
+            
 
             Program.Books();
 
