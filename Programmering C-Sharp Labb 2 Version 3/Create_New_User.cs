@@ -87,11 +87,3 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
         }
     }
 }
-
-/*
- 
- Jag får göra en array, eller så, här vilken hämtas av Main/huvudprogrammet som sedan kör en liten 
- metod som lägger till arrayen i en lista med användare som jag får skapa. Lägga till knattarna i samma lista.
- Kolla mot listan när man loggar in eller skapar nya konton.
-
- */

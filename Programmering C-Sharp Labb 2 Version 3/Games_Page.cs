@@ -17,8 +17,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static string[] headlineAndCategories = new string[] { "Datorspel", "Spel", "Spelstudio", "Pris", "Varunummer" };
 
-        // itemNumbersStartAt = 300;
-
         public int itemnumber = 0;
 
         public Games_Page() {

@@ -57,13 +57,9 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         protected List<string[]> anotherCart = new List<string[]>() {  };
 
-        public User(string username/*, string password*/) {
-
-            //CheckCart();
+        public User(string username) {
 
         }
-
-        //List<string[]> iHateCarts = new List<string[]>(UsersShoppingCart);//Die cart die
 
         public User(string username, string password, string name, string lastname, string membershipLevel) {
             Name = name;
@@ -72,42 +68,11 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             MembershipLevel = membershipLevel;
             Password = password;
             
-            //UsersShoppingCart = shoppingcart;
-            
-//            for (int i = 0; i < shoppingcart.Count; ) {
-//
-//                UsersShoppingCart.Add(shoppingcart[i]);
-//
-//                shoppingcart.RemoveAt(i);
-//
-//            }
-
-            /*for (int i = 0; i < shoppingcart.Count; i++) {
-
-                UsersShoppingCart.Add(shoppingcart[i]);
-
-            }*/
-
-            //UsersShoppingCart = new List<string[]>(Program.shoppingCartList);
-
-            //List<string[]> usersCart = new List<string[]>(Program.shoppingCartList);//Fungerade..
-
-            //UsersShoppingCart.AddRange(Program.shoppingCartList);
-            //UsersShoppingCart = shoppingcart;
-            //UsersShoppingCart.AddRange(Program.shoppingCartList);
-
-            //List<string[]> iHateCarts = new List<string[]> (UsersShoppingCart);
-            
-            //iHateCarts.GetRange(0, UsersShoppingCart.Count;
-
             string[] newUser = new string[] { username, password, name, lastname, membershipLevel };
 
             Program.listOfUsers.Add(newUser);
 
         }
-
-
-//        public User(string[] itemArray) {
         
         public static void ShowCart(string[] itemArray) { 
 
@@ -118,43 +83,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
                 Console.WriteLine("Cart contains: " + NewCart1[i][0].ToString());
 
             }
-
         }
-
-        //public static void LetUsCheckTheCart() {
-
-        //    CheckCart(anotherCart);
-
-        //}
-
-        //public void CheckCart(anotherCart) {
-
-        //    for (int i = 0; i < anotherCart.Count; i++) {
-
-        //        Console.WriteLine(anotherCart[i][0]);
-
-        //    }
-
-        //}
     }
 }
-
-
-/*
- 
- Två sätt att komma åt användaren, två konstruktorer? En där användare skapas och en som körs vid inloggning? Är det vad jag håller på med? O.o
- 
-*/
-
-
-/*
- 
- string name;
-
- string lastName;
-
- string vipMember; //4 värden, om jag implementerar det, "No"/"Bronze"/"Silver"/"Gold"
-
- string password;
- 
- */

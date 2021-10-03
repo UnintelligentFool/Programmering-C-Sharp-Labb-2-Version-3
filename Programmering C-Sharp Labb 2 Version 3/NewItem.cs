@@ -49,13 +49,10 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
             Author = author;
             ItemNumber = itemnumber;
             Price = price;
-            //ArrayOfItems = new string[4] { Title, Author, ItemNumber, Price };
 
         }
 
         public NewItem() {
-
-            //SendingItem(Title, Author, ItemNumber, Price);
 
             ArrayOfItems = new string[4] { Title, Author, ItemNumber, Price };
 
@@ -64,10 +61,3 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
     }
 
 }
-
-/*
-  
-    Istället för att lägga bok med nummer i en lista, lägga instansnamn i en lista? Skapa instans när nummer 
-    skrivs in och sedan lägga dess namn i en lista i kund?
-
- */

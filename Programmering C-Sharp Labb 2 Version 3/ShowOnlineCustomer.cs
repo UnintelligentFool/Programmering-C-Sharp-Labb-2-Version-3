@@ -11,7 +11,7 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static string userLoggedIn = "";
 
-        public  ShowOnlineCustomer(bool isSomeoneOnline, string userOnline /*bool isSomeoneOnlineNow*/) {
+        public  ShowOnlineCustomer(bool isSomeoneOnline, string userOnline) {
 
             isSomeoneLoggedIn = isSomeoneOnline;
             userLoggedIn = userOnline;
@@ -50,8 +50,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
                 Console.ResetColor();
 
             } else {
-
-                //Console.Clear();
 
             }
 

@@ -20,8 +20,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static string[] headlineAndCategories = new string[] { "Böcker", "Titel", "Författare", "Pris", "Varunummer" };
 
-        // itemNumbersStartAt = 100;
-
         private static int itemnumber = 0;
 
         public static int Itemnumber {
@@ -86,52 +84,9 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static void MakeABook(string[] BookValuesArray) {
 
-            //NewItem newBook = new NewItem(Book1[0], Book1[1], Book1[2], Book1[3]);
-            //Console.WriteLine("We just created " + newBook.Title.ToString());
-
-            //NewItem newBook2 = new NewItem();
-            //newBook2.Title = Book2[0];
-            //newBook2.Author = Book2[1];
-            //newBook2.ItemNumber = Book2[2];
-            //newBook2.Price = Book2[3];
-            //Console.WriteLine("We just created " + newBook2.Title.ToString());
-
-            /*
-            for (int i = 0; i < listOfBooks.Count; i++) {
-
-                NewItem newBook = new NewItem();
-                newBook.Title = listOfBooks[i][0];
-                newBook.Author = listOfBooks[i][1];
-                newBook.ItemNumber = listOfBooks[i][2];
-                newBook.Price = listOfBooks[i][3];
-
-                //Console.WriteLine("We just created " + newBook.Title.ToString());
-
-            }
-            */
-
-            
-            /*NewItem newBook = new NewItem();
-            newBook.Title = BookValuesArray[0];
-            newBook.Author = BookValuesArray[1];
-            newBook.ItemNumber = BookValuesArray[2];
-            newBook.Price = BookValuesArray[3];*/
-            
-
             Itemnumber = 0;
 
             Console.Clear();
-            
-            //Program.ProductInHand(BookValuesArray);
-
-            //User addToNewCart = new User(BookValuesArray);
-
-            //Console.ForegroundColor = ConsoleColor.DarkBlue;
-            //Console.Write("Tillagd i kundvagnen: ");
-            //Console.ForegroundColor = ConsoleColor.DarkGreen;
-            //Console.WriteLine(newBook.Title.ToString() + "\n");
-            //Console.ResetColor();
-            
 
             Program.AddToCart(BookValuesArray);
 
@@ -139,33 +94,3 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
     }
 }
-
-
-//Ungefär som meny sidan? ....Tusen for loopar....?
-//
-//Lista som sparar Böcker, författare, pris.
-//Kan använda samma om man gör för spel, Titel, utvecklare, pris.
-//För filmer, Titel, filmföretag, pris.
-//Med andra ord 3 string arrayer i en lista, där pris arrayen omvandlas till en double med Parse. (TryParse onödig eftersom inte användaren påverkar?)
-//
-//Skriv ut listan i ordning.
-//Ordna tre rader med de tre olika.
-//Använda en klass/interface för att skriva ut en lista som definieras och skrivs in här?
-//
-//Background color som passar böcker, kanske Foregroundcolor som passar Background color
-//
-//Funktionalitet: knappar som går att trycka på för att lägga i produkter i vagnen. Sänd med Bok,
-//styckpris, antal av varje bok samt pris som definieras för hela köpet, men det kan kanske skötas
-//av annan klass, View_Shopping_Cart.
-//
-//Rent teoretiskt kan man skapa tre olika sidor från samma klass, sänd bara in olika värden genom parametrar..... Dålig ide eller bra...?
-
-
-
-
-
-
-
-
-//En sida som kan hjälpa till med att skapa en lista med arrayer är:
-//https://stackoverflow.com/questions/549399/c-sharp-creating-an-array-of-arrays/549417

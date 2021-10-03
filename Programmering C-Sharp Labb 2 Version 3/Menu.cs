@@ -173,39 +173,3 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
         }
     }
 }
-
-
-/*
-
-    För första menyn, introduktionssidan: Gör en array med de olika menyalternativen. Skriv en foreach. Innan foreach, bara "#" exempelvis. 
-    Sedan foreach där startar och avslutar med "#". Fyll ut tomrum med mellanrum. Lägg in orden från arrayen med nummer "1", "2", "3" etcetera i mitten.
-    Resultat en ram med ord och siffror för vad man skall skriva för olika alternativ. Antingen 1. Logga in eller 2. Ny användare.
-
-    Korrigering, börja med texten på menyalternativen på den femte x-axel positionen.
-
-    Gör första menyn på totalt 30 tecken i x-led och 2 rader ovan, 2 rader under samt en rad per menyalternatic plus en rad med ett mellanrum. (Fortfarande # på kanterna.)
-    Exempel: "#####" rad, följd av tom "#     #" rad, följd av "Menyalternativ" + tom "#     #" rad, följd av "#####" rad.
-
-    Resultat:
-
-    ##############################
-    #                            #
-    #   1. Logga in              #
-    #                            #
-    #   2. Skapa ny användare    #
-    #                            #
-    ##############################
-
-    
-    ALTERNATIVT:
-    Gör samma meny, återanvänd, för båda menyerna - men använd olika arrayer. Istället för att skriva om koden mer, 
-    gör bara if satsen för just det? Kanske skapa en variabel som ändras och styr det om det behövs?
-
-    För huvudmenyn - Två arrayer, mellanrum mellan varornas kategorier och de andra kategorierna? Kanske överkurs - få allt att fungera först?
-
-    
-    När man loggar in/ut, kolla om man redan är inloggad.
-    
-    Spara kundkorg om man loggar in men tömm om man loggar ut/in med annan (kolla nogare vad som står)
-
-*/

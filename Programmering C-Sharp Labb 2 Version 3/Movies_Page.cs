@@ -17,8 +17,6 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
         public static string[] headlineAndCategories = new string[] { "Filmer", "Film", "Filmbolag", "Pris", "Varunummer" };
 
-        //itemNumbersStartAt = 200;
-
         public int itemnumber = 0;
 
         public Movies_Page() {

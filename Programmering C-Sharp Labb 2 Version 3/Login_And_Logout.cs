@@ -173,11 +173,3 @@ namespace Programmering_C_Sharp_Labb_2_Version_3 {
 
     }
 }
-
-//Logga in --> Om redan inloggad, "LoggedInAllready" följt av "TimeToLogIn", annars bara "TimeToLogIn". Om loggar ut, logga ut.
-//
-// När man loggar ut --> Spara kundvagn hos användare och nollställ sedan den som används
-// Om man har kundvagn och loggar in --> gör inloggad kunds kundvagn till den man hade alternativt fyll på den som inloggad hade?
-// Om man loggar in utan att ha kundvagn --> inloggad kunds kundvagn = kundvagn som används
-//
-// Kontrollera och spara (tills utloggning) om användaren har olika VIP medlemsskap
